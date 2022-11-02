@@ -1,0 +1,17 @@
+name: python
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      # packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: check for python
+        shell: bash
+        run: |
+          which python
+          which python3
