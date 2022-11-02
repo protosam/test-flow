@@ -16,3 +16,5 @@ jobs:
         run: |
           which python
           which python3
+          which pip
+          which pip3
